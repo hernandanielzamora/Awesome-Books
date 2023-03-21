@@ -27,9 +27,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 2023 Conference | Technology, Knowledge & Society <a name="about-project"></a>
+# Aweseome Books <a name="about-project"></a>
 
-Hello there and welcome to the 2023 Conference of Technology, Knowledge & Society webpage. Where the user can find information about this and more conferences.
+Hello there and welcome to Awesome Books, a page where you can add and save your fauvorite books in a list
 
 ## 🛠 Built With <a name="built-with"></a>
 
