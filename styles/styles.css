@@ -120,7 +120,6 @@ ul {
   width: 80vw;
 }
 
-
 #add-form {
   display: flex;
   flex-direction: column;
@@ -156,10 +155,10 @@ input {
 /* Footer */
 footer {
   width: 90%;
-  bottom: 0px;
+  bottom: 1px;
 }
 
-.footer-copyright {  
+.footer-copyright {
   border: 3px solid black;
   font-size: 1.5em;
 }
