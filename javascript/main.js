@@ -25,11 +25,8 @@ class UItask {
     const bookList = document.getElementById('book-list');
     const bookContent = document.createElement('div');
     bookContent.className = 'book';
-    bookContent.innerHTML = `<p class="book-title">${book.title}</p>
-                      <span></span>
-                      <p>by</p>
-                      <span></span>
-                      <p class="book-author">${book.author}</p>
+    bookContent.innerHTML = `<p class="book-title">"${book.title}"</p>
+                      <p class="book-author">by ${book.author}</p>
                       <button class="delete">Remove</button>`;
     bookList.appendChild(bookContent);
   }
@@ -85,6 +82,14 @@ class Storage {
 
 /* Display books */
 document.addEventListener('DOMContentLoaded', UItask.displayBooks);
+/* Avoids the empty border in the books section */
+document.addEventListener('DOMContentLoaded', () => {
+  if (bookList.innerHTML === '') {
+    bookList.classList.add('invisible');
+  } else {
+    bookList.classList = 'book-list';
+  }
+});
 
 /* Adding a book to the list */
 const bookForm = document.getElementById('add-form');
@@ -101,6 +106,8 @@ bookForm.addEventListener('submit', (e) => {
 
   /* Add book to the list (create the book in the UI) */
   UItask.addBook(book);
+  /* Enables the book section border */
+  bookList.classList = 'book-list';
 
   /* Save book in local storage */
   Storage.addBookLocalStorage(book);
@@ -109,14 +116,15 @@ bookForm.addEventListener('submit', (e) => {
   UItask.clearInputs();
 });
 
-/* Remove Book from the list */
 const bookList = document.getElementById('book-list');
-
+/* Remove Book from the list */
 bookList.addEventListener('click', (e) => {
   /* Remove book from the list */
   UItask.deleteBook(e.target);
-
+  /* Disables the book section border */
+  if (bookList.innerHTML === '') {
+    bookList.classList.add('invisible');
+  }
   /* Remove book from the local storage */
-  Storage.removeBook(e.target.previousElementSibling.previousElementSibling
-    .previousElementSibling.previousElementSibling.previousElementSibling.textContent);
+  Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
