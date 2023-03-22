@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+
+/* Books */
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+}
+
+.book-title {
+  font-size: 1em;
+}
+
+span {
+  margin-left: 10px;
+}
+
+.delete {
+  margin-left: 10%;
+}
+
+/* Add Form */
+#add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
