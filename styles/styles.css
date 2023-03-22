@@ -61,7 +61,6 @@ ul {
   margin-top: 1%;
 }
 
-
 /* Books */
 .title {
   text-align: center;
@@ -165,6 +164,7 @@ input {
 #contact-me {
   margin-top: 10%;
 }
+
 .contact-info {
   font-size: 1.2em;
   margin-bottom: 2%;
