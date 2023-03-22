@@ -53,6 +53,15 @@ ul {
   color: #ff8e3c;
 }
 
+/* Date */
+.date {
+  align-self: flex-end;
+  margin-right: 5%;
+  font-size: 1.2em;
+  margin-top: 1%;
+}
+
+
 /* Books */
 .title {
   text-align: center;
@@ -152,10 +161,35 @@ input {
   transform: scale(1.1);
 }
 
+/* Contact Me Section */
+#contact-me {
+  margin-top: 10%;
+}
+.contact-info {
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+
+.contact-item {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
 /* Footer */
 footer {
   width: 90%;
   bottom: 1px;
+  position: fixed;
 }
 
 .footer-copyright {
