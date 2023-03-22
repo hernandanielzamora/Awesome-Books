@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Awesome Books</title>
+</head>
+
+<body>
+
+  <!-- Header & Navbar -->
+  <header>
+    <h1 class="title">Awesome Books</h1>
+    <nav>
+      <ul>
+        <li class="nav-list"><button class="nav-btn active" type="button" id="btn-list">List</button></li>
+        <li class="nav-list">|</li>
+        <li class="nav-list"><button class="nav-btn" type="button" id="btn-add">Add New</button></li>
+        <li class="nav-list">|</li>
+        <li class="nav-list"><button class="nav-btn" type="button" id="btn-contact">Contact</button></li>
+        <li class="nav-list last-nav-list">|</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Date -->
+  <div class="date"></div>
+  <!-- List -->
+  <main>
+    <div class="book-list-container">
+      <h2 class="subtitle">List of Awesome Book</h2>
+      <!-- Book List (JS) -->
+      <div class="book-list" id="book-list"></div>
+    </div>
+  </main>
+
+  
+  <!-- Add a Book -->
+  <div class="form-container">
+    <h2 class="subtitle">Add a Book</h2>
+    <form id="add-form">
+      <input type="text" required placeholder="Title" id="title">
+      <input type="text" required placeholder="Author" id="author">
+      <button id="add-btn" type="submit">Add New Book</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copyright">Copyright ©️ 2023 Hernán Zamora</div>
+  </footer>
+
+
+  <script src="javascript/main.js"></script>
+
+</body>
+
+</html>
